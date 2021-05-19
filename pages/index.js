@@ -5,7 +5,7 @@ export default function Home() {
     <ul>
       <li>
         <Link href="/b" as="/a">
-          <a>a</a>
+          <a class="text-pink-500">a</a>
         </Link>
       </li>
       <li>
