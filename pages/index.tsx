@@ -4,16 +4,38 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div id="app" className="min-h-screen bg-gray-200 antialiased">
-      <header className="flex justify-between items-center bg-gray-900 px-4 py-3">
-        <div>
-          <Image width="264" height="64" src="/images/logo.png" />
-        </div>
+      <header className="bg-gray-900">
+        <div className="flex justify-between px-4 py-3">
+          <div>
+            <Image width="264" height="64" src="/images/logo.png" />
+          </div>
 
-        <div className="flex">
-          <button>
-            <svg className="h-10 w-10 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z" /></svg>
-          </button>
+          <div className="flex">
+            <button className="px-2">
+              <svg className="h-10 w-10 fill-current text-gray-500 hover:text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z" /></svg>
+            </button>
+          </div>
         </div>
+        <nav>
+          <div className="px-2 pt-3 pb-5 border-b border-gray-800">
+            <a href="#" className="block px-2 py-1 rounded font-semibold text-white hover:bg-gray-800">List your property</a>
+            <a href="#" className="mt-1 block px-2 py-1 rounded font-semibold text-white hover:bg-gray-800">Trips</a>
+            <a href="#" className="mt-1 block px-2 py-1 rounded font-semibold text-white hover:bg-gray-800">Messages</a>
+          </div>
+
+          <div className="px-5 py-5">
+            <div className="flex items-center">
+              <Image className="h-10 w-10 object-cover rounded-full border-2 border-gray-600" width="256" height="150" src="/images/hat.jpeg" />
+              <span className="ml-4 font-semibold text-gray-200">Isla Schoger</span>
+            </div>
+
+            <div className="mt-5">
+              <a href="#" className="block text-gray-400 hover:text-white">Account settings</a>
+              <a href="#" className="mt-3 block text-gray-400 hover:text-white">Support</a>
+              <a href="#" className="mt-3 block text-gray-400 hover:text-white">Sign out</a>
+            </div>
+          </div>
+        </nav>
       </header>
 
       <section className="flex justify-between bg-gray-800 px-2 py-3">
