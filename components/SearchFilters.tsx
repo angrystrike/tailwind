@@ -52,7 +52,7 @@ export default function SearchFilters() {
 
                 <div className="px-4 py-4 border-t border-gray-900">
                     <span className="block text-sm font-semibold text-gray-500">Property Type</span>
-                    <div className="sm:flex sm:-mx-2">
+                    <div className="mt-3 sm:flex sm:-mx-2">
                         <label className="mt-3 sm:w-1/4 sm:px-2 sm:flex items-center">
                             <input className="form-radio bg-gray-900 focus:bg-gray-700" type="radio" name="propertyType" value="house" />
                             <span className="ml-2 text-white">House</span>
