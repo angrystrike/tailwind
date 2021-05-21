@@ -1,6 +1,5 @@
-import Link from 'next/link'
-import Image from 'next/image'
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 
 const SiteHeader = dynamic(() => import('../components/SiteHeader'))
 const SearchFilters = dynamic(() => import('../components/SearchFilters'))
