@@ -5,6 +5,11 @@ module.exports = {
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      padding: {
+        '5/6': '83.3333333%'
+      }
+    },
     screens: {
       sm: '640px',
       md: '768px',
